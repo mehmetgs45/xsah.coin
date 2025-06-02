@@ -1,72 +1,88 @@
- # 🐏 XSah Coin
+# 🐏 XSah Coin
 
-**XSah Coin**, Kürt dağlarında özgürlük için direnen bir koçun (🐏) ilhamıyla doğan, topluluk odaklı bir kripto para projesidir.  
-XSah, hayatta kalma mücadelesini, doğaya karşı değil doğayla birlikte direnenlerin hikayesini temsil eder.
+**XSah Coin** is a community-driven cryptocurrency inspired by a ram (🐏) fighting for freedom in the Kurdish mountains.  
+XSah represents the story of survival, not against nature, but alongside it.
 
-> “Kürt dağlarında bir eşeğin hayatta kalma mücadelesi” teması, özgürlük, onur ve direnç simgesi haline gelirken; XSah Coin bu mücadeleyi dijital dünyaya taşıyor.
+> The theme of “a ram’s struggle for survival in the Kurdish mountains” symbolizes freedom, honor, and resilience; XSah Coin carries this struggle into the digital world.
 
-## 🔧 Teknik Bilgiler
+---
 
-- **Blockchain Ağı:** Solana (şu anda Devnet/Testnet)
-- **Token Standardı:** SPL Token
-- **Token İsmi:** XSah Coin
-- **Token Sembolü:** XSAH
-- **Toplam Arz:** 1,000,000 XSAH
-- **Decimal (ondalık):** 9
-- **SPL Token Adresi (Devnet):** `TOKEN_ADDRESS_BURAYA`
-- **Cüzdan Uyumu:** Phantom, Solflare vb.
+## 🔧 Technical Information
 
-## 📦 Özellikler
+- **Blockchain Network:** Solana (currently on Devnet/Testnet)  
+- **Token Standard:** SPL Token  
+- **Token Name:** XSah Coin  
+- **Token Symbol:** XSAH  
+- **Total Supply:** 1,000,000 XSAH  
+- **Decimals:** 9  
+- **SPL Token Address (Devnet):** `TOKEN_ADDRESS_HERE`  
+- **Wallet Compatibility:** Phantom, Solflare, etc.
 
-- 🐏 Topluluk temelli: Merkeziyetsizliğe ve kolektif güce önem verir  
-- 🔒 Güvenli: Solana'nın hızlı ve düşük maliyetli altyapısını kullanır  
-- 🌱 Kültürel: Kürt kültürüne, doğaya ve mücadeleye dayalı bir felsefe içerir  
-- 📜 Açık kaynak: Kodlar ve belgeler GitHub üzerinden herkese açıktır  
+---
 
-## 🛠️ Nasıl Kullanılır?
+## 📦 Features
 
-1. [Phantom Cüzdanı](https://phantom.app/) indirip kur.
-2. Solana Devnet ağına geç.
-3. Test SOL almak için faucet kullan:
-   - https://solfaucet.com/
-4. XSah Token adresini Phantom’a manuel olarak ekle:
-   - Token adresi: `TOKEN_ADDRESS_BURAYA`
-5. Token gönderimi/test işlemleri için CLI veya frontend aracı kullanılabilir.
+- 🐏 Community-driven: Emphasizes decentralization and collective strength  
+- 🔒 Secure: Uses Solana’s fast and low-cost infrastructure  
+- 🌱 Cultural: Rooted in Kurdish culture, nature, and resistance philosophy  
+- 📜 Open Source: Code and documentation available on GitHub
 
-## 🗺️ Yol Haritası (Roadmap)
+---
 
-| Aşama | Tarih | Açıklama |
-|-------|-------|----------|
-| ✅ Başlangıç | Haziran 2025 | XSah fikri doğdu, SPL token oluşturuldu |
-| 🟡 Tanıtım | Haziran 2025 | Sosyal medya (X), GitHub, test tokenlar |
-| 🔜 Website & Topluluk | Temmuz 2025 | Tanıtım sitesi, Telegram/Discord |
-| 🔜 Mainnet Lansman | Ağustos 2025 | XSah Coin’i Solana Mainnet'e taşıma |
-| 🔜 DEX Listeleme | Sonbahar 2025 | Orca/Raydium gibi DEX’lerde yer alma |
-| 🔜 Geliştirici Hibeleri | Kış 2025 | XSah tabanlı uygulamalar için teşvikler |
-| 🔜 NFT & Kültürel İşbirlikler | 2026 | XSah temalı NFT koleksiyonları & yerel sanatçılarla işbirliği |
+## 🛠️ How to Use
 
-## 🌐 Sosyal Medya & Bağlantılar
+1. Download and install [Phantom Wallet](https://phantom.app/)  
+2. Switch to the Solana Devnet network  
+3. Use a faucet to get test SOL:  
+   - https://solfaucet.com/  
+4. Manually add the XSah token to Phantom:  
+   - Token address: `TOKEN_ADDRESS_HERE`  
+5. Use CLI or frontend tools for token transfers and testing
 
-- 🐦 Twitter (X): [https://twitter.com/xsahcoin](https://twitter.com/xsahcoin)
-- 🐙 GitHub: [https://github.com/KULLANICIADI/xsah-coin](https://github.com/KULLANICIADI/xsah-coin)
-- 🌍 Web Sitesi: `https://xsahcoin.vercel.app` *(yayında değilse yakında gelecek)*
+---
 
-## 🤝 Katkı Sağlamak
+## 🗺️ Roadmap
 
-Bu proje topluluğa aittir. Katkı sağlamak istersen:
+| Phase             | Date         | Description                               |
+|-------------------|--------------|-------------------------------------------|
+| ✅ Initial Stage    | June 2025    | XSah concept born, SPL token created      |
+| 🟡 Promotion       | June 2025    | Social media (X), GitHub, test tokens     |
+| 🔜 Website & Community | July 2025 | Launch promo site, Telegram/Discord groups|
+| 🔜 Mainnet Launch  | August 2025  | Deploy XSah Coin on Solana Mainnet         |
+| 🔜 DEX Listings    | Fall 2025    | List on Orca/Raydium and other DEXes      |
+| 🔜 Developer Grants | Winter 2025 | Incentivize XSah-based apps and projects  |
+| 🔜 NFT & Cultural Collaborations | 2026 | XSah-themed NFT collections & local artists |
 
-1. Forkla
-2. Yeni bir dal (branch) oluştur
-3. Değişikliklerini yap
-4. Pull request gönder
+---
 
-Kod, belge, tasarım, içerik — her katkıya açığız.
+## 🌐 Social Media & Links
 
-## ⚖️ Lisans
+- 🐦 Twitter (X): [https://twitter.com/xsahcoin](https://twitter.com/xsahcoin)  
+- 🐙 GitHub: [https://github.com/YOUR_USERNAME/xsah-coin](https://github.com/YOUR_USERNAME/xsah-coin)  
+- 🌍 Website: `https://xsahcoin.vercel.app` *(Coming Soon)*
 
-Bu proje [MIT Lisansı](./LICENSE) altında lisanslanmıştır.  
-Dilediğiniz gibi kullanabilir, geliştirebilir, paylaşabilirsiniz.
+---
 
-> 🐏 **XSah Coin**, direnişin, özgürlüğün ve kolektif umudun dijital simgesidir.  
-> Dağlara kök salmış, zincir tanımaz bir fikirle inşa edildi.  
-> Kürt halkının onurlu mücadelesinden ilham aldı.
+## 🤝 Contributing
+
+This project belongs to the community. To contribute:
+
+1. Fork the repository  
+2. Create a new branch  
+3. Make your changes  
+4. Submit a pull request
+
+Contributions in code, documentation, design, or content are welcome.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the [MIT License](./LICENSE).  
+Feel free to use, modify, and share it.
+
+---
+
+> 🐏 **XSah Coin** is a digital symbol of resistance, freedom, and collective hope.  
+> Rooted deeply in the mountains, built with an unbreakable spirit.  
+> Inspired by the honorable struggle of the Kurdish people.
