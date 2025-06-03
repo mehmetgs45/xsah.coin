@@ -1,0 +1,46 @@
+{
+  "name": "XSah Coin",
+  "symbol": "XSAH",
+  "description": "XSah Coin is a Kurdish community token symbolizing resilience, freedom, and cultural pride. Built on Solana blockchain as an SPL token, XSah embodies the spirit of resistance and hope in the Kurdish mountains.",
+  "seller_fee_basis_points": 0,
+  "external_url": "https://xsahcoin.vercel.app",
+  "image": "https://raw.githubusercontent.com/mehmetgs45/xsah.coin/394d4aeeefd3196475edbf1e07d80a72c894cf27/assets/mainnet/tokens/464AB7E4-FAD2-4937-8A28-C75740EE3363.png",
+  "attributes": [
+    {
+      "trait_type": "Community",
+      "value": "Kurdish"
+    },
+    {
+      "trait_type": "Theme",
+      "value": "Freedom and Resistance"
+    },
+    {
+      "trait_type": "Blockchain",
+      "value": "Solana"
+    },
+    {
+      "trait_type": "Token Standard",
+      "value": "SPL"
+    },
+    {
+      "trait_type": "Decimals",
+      "value": 9
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/mehmetgs45/xsah.coin/394d4aeeefd3196475edbf1e07d80a72c894cf27/assets/mainnet/tokens/464AB7E4-FAD2-4937-8A28-C75740EE3363.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump",
+        "share": 100,
+        "verified": true
+      }
+    ]
+  }
+}
