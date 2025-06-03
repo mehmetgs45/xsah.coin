@@ -1,0 +1,18 @@
+[
+  {
+    "name": "XSah",
+    "symbol": "XSAH",
+    "decimals": 2,
+    "address": "3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump",
+    "logoURI": "https://raw.githubusercontent.com/KULLANICI_ADIN/xsah-token-list/main/assets/mainnet/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump/logo.png",
+    "tags": ["community", "meme", "xsah", "freedom"],
+    "extensions": {
+      "website": "https://xsah.org",
+      "twitter": "https://x.com/xsahcoin",
+      "description": {
+        "en": "XSah is the meme token of a rebel ram surviving in the Kurdish mountains. Born from resistance, guided by freedom. Community-powered, decentralized, and unstoppable.",
+        "ku": "XSah, di çiya yên Kurdistanê de ramêk berxwedêr e ku dijî hêrs û kêmasî dimîne. Ji berxwedanê hatiye zayîn, bi azadî rê dikeve. Komalge-yê xweber, navxweyî û bêrawestî ye."
+      }
+    }
+  }
+]
