@@ -1,0 +1,19 @@
+{
+  "name": "XSah Coin",
+  "symbol": "XSAH",
+  "decimals": 9,
+  "address": "3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump",
+  "chainId": 103,
+  "logoURI": "https://example.com/logo.png",
+  "tags": ["utility", "community"],
+  "extensions": {
+    "website": "https://xsahcoin.example",
+    "twitter": "https://twitter.com/xsahcoin",
+    "telegram": "https://t.me/xsahcoin",
+    "description": {
+      "en": "XSah Coin is a Solana-based SPL token representing resistance and freedom of the Kurdish people.",
+      "ku": "Tokena XSah tokena SPL-ê ya li ser Solana ye ku rûmeta berxwedan û azadiya gelê Kurd nîşan dide."
+    },
+    "wallets": ["Phantom", "Solflare"]
+  }
+}
