@@ -1,0 +1,13 @@
+{
+  "chainId": 101,
+  "address": "3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump",
+  "symbol": "XSAH",
+  "name": "XSah Coin",
+  "decimals": 9,
+  "logoURI": "https://raw.githubusercontent.com/mehmetgs45/xsah.coin/394d4aeeefd3196475edbf1e07d80a72c894cf27/assets/mainnet/tokens/464AB7E4-FAD2-4937-8A28-C75740EE3363.png",
+  "tags": ["utility-token"],
+  "extensions": {
+    "website": "https://xsahcoin.vercel.app",
+    "twitter": "https://twitter.com/xsahcoin"
+  }
+}
