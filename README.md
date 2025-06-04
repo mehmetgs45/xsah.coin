@@ -1,88 +1,70 @@
 # 🐏 XSah Coin
 
-**XSah Coin** is a community-driven cryptocurrency inspired by a ram (🐏) fighting for freedom in the Kurdish mountains.  
-XSah represents the story of survival, not against nature, but alongside it.
+**XSah Coin** is a decentralized community-powered token inspired by the enduring spirit of a ram 🐏 surviving in the Kurdish mountains. XSah represents a powerful narrative: not only the fight for survival — but the fight for freedom, dignity, and unity.
 
-> The theme of “a ram’s struggle for survival in the Kurdish mountains” symbolizes freedom, honor, and resilience; XSah Coin carries this struggle into the digital world.
-
----
-
-## 🔧 Technical Information
-
-- **Blockchain Network:** Solana (currently on Devnet/Testnet)  
-- **Token Standard:** SPL Token  
-- **Token Name:** XSah Coin  
-- **Token Symbol:** XSAH  
-- **Total Supply:** 1,000,000 XSAH  
-- **Decimals:** 9  
-- **SPL Token Address (Devnet):** `TOKEN_ADDRESS_HERE`  
-- **Wallet Compatibility:** Phantom, Solflare, etc.
+> “XSah” stands for **Freedom Like a People.**  
+> Born from struggle. Built by the people. Running on the blockchain.
 
 ---
 
-## 📦 Features
+## 🧬 Project Overview
 
-- 🐏 Community-driven: Emphasizes decentralization and collective strength  
-- 🔒 Secure: Uses Solana’s fast and low-cost infrastructure  
-- 🌱 Cultural: Rooted in Kurdish culture, nature, and resistance philosophy  
-- 📜 Open Source: Code and documentation available on GitHub
-
----
-
-## 🛠️ How to Use
-
-1. Download and install [Phantom Wallet](https://phantom.app/)  
-2. Switch to the Solana Devnet network  
-3. Use a faucet to get test SOL:  
-   - https://solfaucet.com/  
-4. Manually add the XSah token to Phantom:  
-   - Token address: `TOKEN_ADDRESS_HERE`  
-5. Use CLI or frontend tools for token transfers and testing
+| Property           | Description                                      |
+|--------------------|--------------------------------------------------|
+| **Blockchain**      | Solana (Devnet, Testnet, Mainnet-ready)          |
+| **Token Standard**  | SPL Token (Solana Program Library)               |
+| **Token Name**      | XSah Coin                                        |
+| **Token Symbol**    | XSAH                                             |
+| **Decimals**        | 9                                                |
+| **Total Supply**    | 1,000,000 XSAH                                   |
+| **Token Address**   | `TOKEN_ADDRESS_HERE` *(Replace with your token)* |
+| **Wallets**         | Phantom, Solflare, Backpack, Ledger, etc.       |
+| **Status**          | Active (Devnet Testing Phase)                    |
 
 ---
 
-## 🗺️ Roadmap
+## 🌟 Why XSah?
 
-| Phase             | Date         | Description                               |
-|-------------------|--------------|-------------------------------------------|
-| ✅ Initial Stage    | June 2025    | XSah concept born, SPL token created      |
-| 🟡 Promotion       | June 2025    | Social media (X), GitHub, test tokens     |
-| 🔜 Website & Community | July 2025 | Launch promo site, Telegram/Discord groups|
-| 🔜 Mainnet Launch  | August 2025  | Deploy XSah Coin on Solana Mainnet         |
-| 🔜 DEX Listings    | Fall 2025    | List on Orca/Raydium and other DEXes      |
-| 🔜 Developer Grants | Winter 2025 | Incentivize XSah-based apps and projects  |
-| 🔜 NFT & Cultural Collaborations | 2026 | XSah-themed NFT collections & local artists |
-
----
-
-## 🌐 Social Media & Links
-
-- 🐦 Twitter (X): [https://twitter.com/xsahcoin](https://twitter.com/xsahcoin)  
-- 🐙 GitHub: [https://github.com/YOUR_USERNAME/xsah-coin](https://github.com/YOUR_USERNAME/xsah-coin)  
-- 🌍 Website: `https://xsahcoin.vercel.app` *(Coming Soon)*
+| Feature             | Description |
+|---------------------|-------------|
+| 🐏 **Cultural Identity** | Embodies Kurdish resistance, folklore, and symbolism |
+| 🛠 **Fully Open Source** | Transparent codebase on GitHub – fork, modify, contribute |
+| ⚡ **Ultra Fast & Scalable** | Built on Solana for high throughput, low latency |
+| 🌿 **Eco-conscious** | Solana’s Proof of History is efficient and green |
+| 🤝 **Community-first** | No pre-sale. No whales. Power to the people. |
+| 🌐 **Cross-Integration Ready** | Compatible with Solana dApps, aggregators, and wallets |
+| 🧩 **Token List Compatible** | Metadata structured for easy addition to token registries |
 
 ---
 
-## 🤝 Contributing
+## 🚀 Getting Started (For Users)
 
-This project belongs to the community. To contribute:
+### 1. Install Phantom Wallet
+> 📲 https://phantom.app
 
-1. Fork the repository  
-2. Create a new branch  
-3. Make your changes  
-4. Submit a pull request
+### 2. Switch to Solana Devnet
+> Phantom → Settings → Developer Mode → Switch Network → Devnet
 
-Contributions in code, documentation, design, or content are welcome.
+### 3. Get Free Test SOL
+> 💧 [https://solfaucet.com](https://solfaucet.com)  
+> or use Solana CLI:  
+> `solana airdrop 2 <your-wallet-address> --url devnet`
+
+### 4. Add XSah Token to Wallet
+- Go to “Manage Token List” → “Add Custom Token”
+- Token Address: `TOKEN_ADDRESS_HERE`
+- Symbol: `XSAH`
+- Decimals: `9`
 
 ---
 
-## ⚖️ License
+## 🧑‍💻 Developer Setup
 
-This project is licensed under the [MIT License](./LICENSE).  
-Feel free to use, modify, and share it.
+```bash
+# Clone the repository
+git clone https://github.com/mehmetgs45/xsah.coin.git
+cd xsah.coin
 
----
+# Recommended: use GitHub Codespaces or VS Code
 
-> 🐏 **XSah Coin** is a digital symbol of resistance, freedom, and collective hope.  
-> Rooted deeply in the mountains, built with an unbreakable spirit.  
-> Inspired by the honorable struggle of the Kurdish people.
+# Start developing, customizing, or contributing
