@@ -1,241 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>🐏 XSah Coin - Freedom • Resistance • Culture</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🐏 XSah Coin - Freedom • Resistance • Culture</title>
 
-<meta name="description" content="XSah Coin is a community-driven cryptocurrency inspired by a ram’s struggle in the Kurdish mountains. Freedom, resistance, and culture." />
-<meta name="keywords" content="XSah, XSah Coin, Cryptocurrency, Solana, Kurdish, Token, Blockchain" />
-<meta name="author" content="XSah Community" />
+  <meta name="description" content="XSah Coin is a community-driven cryptocurrency inspired by a ram’s struggle in the Kurdish mountains. Freedom, resistance, and culture." />
+  <meta name="keywords" content="XSah, XSah Coin, Cryptocurrency, Solana, Kurdish, Token, Blockchain, Web3, SPL Token, Meme Coin" />
+  <meta name="author" content="XSah Community" />
+  <meta property="og:title" content="XSah Coin - The Wild Spirit of Solana" />
+  <meta property="og:description" content="A community-driven token born in the Kurdish mountains. Join the resistance!" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" />
+  <meta property="og:url" content="https://xsah.org" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<style>.top-buttons {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-  z-index: 999;
-}
+  <style>
+    .top-buttons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 999;
+    }
 
-.button-link {
-  background-color: #ffd700;
-  color: #000;
-  padding: 10px 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
+    .button-link {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
 
-.button-link:hover {
-  background-color: #fff176;
-}
-  /* Reset & basics */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background: #1a1a2e;
-    color: #eaeaea;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.3rem;
-  }
-  header p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #f7c948;
-  }
-  main {
-    max-width: 900px;
-    width: 100%;
-    background: #16213e;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(247, 201, 72, 0.5);
-  }
-  section {
-    margin-bottom: 2rem;
-  }
-  section h2 {
-    color: #f7c948;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #f7c948;
-    padding-bottom: 0.3rem;
-  }
-  .side-by-side {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .column {
-    flex: 1 1 45%;
-  }
-  .column p, .column ul {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  footer {
-    margin-top: auto;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #999;
-    padding: 1rem 0;
-  }
-  a {
-    color: #f7c948;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  /* Responsive */
-  @media (max-width: 700px) {
-    .side-by-side {
+    .button-link:hover {
+      background-color: #fff176;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #1a1a2e;
+      color: #eaeaea;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      padding: 1rem;
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-top: 4rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #f7c948;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      background: #16213e;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(247, 201, 72, 0.5);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      color: #f7c948;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f7c948;
+      padding-bottom: 0.3rem;
+    }
+
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
     .column {
-      flex: 1 1 100%;
+      flex: 1 1 45%;
     }
-  }
-</style>
+
+    .column p, .column ul {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 1rem 0;
+    }
+
+    a {
+      color: #f7c948;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .side-by-side {
+        flex-direction: column;
+      }
+
+      .column {
+        flex: 1 1 100%;
+      }
+
+      .top-buttons {
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+      }
+
+      .button-link {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header>
-<header>
-  <h1>🐏 XSah Coin</h1>
-  <p>Freedom • Resistance • Culture</p>
 
   <div class="top-buttons">
     <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">Buy XSah</a>
     <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">Phantom</a>
   </div>
-</header>
 
-<main>
-<main>
-  <section>
-    <h2>About XSah Coin</h2>
-    <div class="side-by-side">
-      <div class="column">
-        <p><strong>English</strong></p>
-        <p>XSah Coin is a community-driven cryptocurrency inspired by a ram’s struggle for freedom in the Kurdish mountains.<br>
-        XSah represents survival, resilience, and living in harmony with nature.</p>
-      </div>
-      <div class="column">
-        <p><strong>Kurdish (Kurmancî)</strong></p>
-        <p>XSah Coin perçeçûnî yekîtiyeke civakî ye ku ji hêla heştokekî (🐏) ku li çiyayên Kurdistanê dixebite çêbûye.<br>
-        XSah nîşanê jiyanê, berdestî û hevreha jiyanê bi xwezayê ye.</p>
-      </div>
-    </div>
-  </section>
+  <header>
+    <h1>🐏 XSah Coin</h1>
+    <p>Freedom • Resistance • Culture</p>
+  </header>
 
-  <section>
-    <h2>Technical Details / Agahdariyên Teknîkî</h2>
-    <div class="side-by-side">
-      <div class="column">
-        <ul>
-          <li><strong>Blockchain Network:</strong> Solana (Devnet/Testnet)</li>
-          <li><strong>Token Standard:</strong> SPL Token</li>
-          <li><strong>Token Name:</strong> XSah Coin</li>
-          <li><strong>Token Symbol:</strong> XSAH</li>
-          <li><strong>Total Supply:</strong> 1,000,000 XSAH</li>
-          <li><strong>Decimals:</strong> 9</li>
-          <li><strong>Wallet Compatibility:</strong> Phantom, Solflare, etc.</li>
-        </ul>
+  <main>
+    <section>
+      <h2>About XSah Coin</h2>
+      <div class="side-by-side">
+        <div class="column">
+          <p><strong>English:</strong> XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.</p>
+        </div>
+        <div class="column">
+          <p><strong>Kurdish (Kurmancî):</strong> XSah Coin ji ber xebata heştokekê li çiyayên Kurdistanê hatî afirandin. Wekî sembolê jiyanê, azadî û hevgirtinê bi xwezayê ye.</p>
+        </div>
       </div>
-      <div class="column">
-        <ul>
-          <li><strong>Tora Çîpê:</strong> Solana (Devnet/Testnet)</li>
-          <li><strong>Standarda Tokenê:</strong> Tokenê SPL</li>
-          <li><strong>Navê Tokenê:</strong> XSah Coin</li>
-          <li><strong>Simbolê Tokenê:</strong> XSAH</li>
-          <li><strong>Hemû Peydarî:</strong> 1,000,000 XSAH</li>
-          <li><strong>Dezmala Çend Hejmara:</strong> 9</li>
-          <li><strong>Hemû Cüzdanan:</strong> Phantom, Solflare û hwd.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>Roadmap / Rêbera Projeya</h2>
-    <div class="side-by-side">
-      <div class="column">
-        <ul>
-          <li><strong>Initial Stage</strong> (June 2025): Concept & SPL token created</li>
-          <li><strong>Promotion</strong> (June 2025): Social media, GitHub, test tokens</li>
-          <li><strong>Website & Community</strong> (July 2025): Launch promo site, Telegram/Discord</li>
-          <li><strong>Mainnet Launch</strong> (August 2025): Deploy on Solana mainnet</li>
-          <li><strong>DEX Listings</strong> (Fall 2025): Orca, Raydium, etc.</li>
-          <li><strong>Developer Grants</strong> (Winter 2025): Incentives for XSah apps</li>
-          <li><strong>NFT & Cultural Collaborations</strong> (2026): XSah-themed NFT collections</li>
-        </ul>
-      </div>
-      <div class="column">
-        <ul>
-          <li><strong>Serdestpêk</strong> (Hezîran 2025): Wate û tokenê SPL çêbû</li>
-          <li><strong>Teşwîq</strong> (Hezîran 2025): Medyayên civakî, GitHub, tokenên testê</li>
-          <li><strong>Malpera & Civakî</strong> (Tîrmeh 2025): Malpera promosyonê, Telegram/Discord</li>
-          <li><strong>Serdana Mainnet</strong> (Tebax 2025): Serdana mainnetê ya Solana</li>
-          <li><strong>Listekirinên DEX</strong> (Payîz 2025): Orca, Raydium û hwd.</li>
-          <li><strong>Hibe û Piştgiriya Pêşkeftinê</strong> (Zivistan 2025): Rêxistinên serlêdanê</li>
-          <li><strong>NFT û Hevkarîya Çandî</strong> (2026): Koleksiyona NFT ya XSah</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section>
+      <h2>Technical Details</h2>
+      <ul>
+        <li><strong>Network:</strong> Solana</li>
+        <li><strong>Standard:</strong> SPL Token</li>
+        <li><strong>Symbol:</strong> XSAH</li>
+        <li><strong>Supply:</strong> 1,000,000</li>
+        <li><strong>Wallets:</strong> Phantom, Solflare</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Get Involved / Beşdar Bibe</h2>
-    <div class="side-by-side">
-      <div class="column">
-        <p>Want to contribute? Fork the repo, create a branch, make changes, and submit a pull request.</p>
-      </div>
-      <div class="column">
-        <p>Hûn dixwazin beşdar bibin? Repoê fork bikin, brancheke nû çêbikin, guhertin bikin û pull request-ê bidin.</p>
-      </div>
-    </div>
-  </section>
+    <section>
+      <h2>Roadmap</h2>
+      <ul>
+        <li>✅ June 2025: Token created & promoted</li>
+        <li>✅ July 2025: Website live, community building</li>
+        <li>🔜 August 2025: Mainnet launch</li>
+        <li>🔜 Fall 2025: DEX Listings</li>
+        <li>🔜 2026: Cultural Collaborations</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Follow Us / Meşgul Bikin</h2>
-    <div class="side-by-side">
-      <div class="column">
-        <p>Follow us on X (Twitter) for latest updates and community news:</p>
-        <p><a href="https://twitter.com/xsahcoin" target="_blank" rel="noopener noreferrer">@xsahcoin</a></p>
-      </div>
-      <div class="column">
-        <p>Ji bo nûçe û agahdariyên civakî me li ser X (Twitter) meşgul bikin:</p>
-        <p><a href="https://twitter.com/xsahcoin" target="_blank" rel="noopener noreferrer">@xsahcoin</a></p>
-      </div>
-    </div>
-  </section>
-</main>
+    <section>
+      <h2>Follow Us</h2>
+      <p>Follow us on <a href="https://twitter.com/xsahcoin" target="_blank">@xsahcoin</a></p>
+    </section>
+  </main>
 
-<footer>
-  <p>© 2025 XSah Community. All rights reserved.</p>
-</footer>
-<div class="top-buttons">
-  <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">Buy XSah</a>
-  <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">Phantom</a>
-</div>
+  <footer>
+    <p>© 2025 XSah Community. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
