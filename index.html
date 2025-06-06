@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🐏 XSah Coin - Freedom • Resistance • Culture</title>
   <link rel="icon" href="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" type="image/png" />
-  <meta name="description" content="XSah Coin - A symbol of cultural pride, freedom, and resistance, born in the Kurdish mountains." />
-  <meta name="keywords" content="XSah, XSah Coin, Solana, Kurdish, Token, Blockchain, Web3, Meme Coin, Culture" />
+  <meta name="description" content="XSah Coin - Born in the Kurdish mountains. A symbol of culture, resistance and freedom." />
+  <meta name="keywords" content="XSah, XSah Coin, Solana, Kurdish, Token, Blockchain, Web3, Meme Coin" />
   <meta name="author" content="XSah Community" />
   <meta property="og:image" content="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -22,20 +22,20 @@
 
     body {
       background: url('assets/mainnet/background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-size: 80%;
       background-color: #1a1a2e;
       color: #fff;
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     .top-buttons {
       position: fixed;
       top: 10px;
-      right: 10px;
+      left: 10px;
       display: flex;
-      flex-direction: column;
       gap: 10px;
-      z-index: 10000;
+      flex-wrap: wrap;
+      z-index: 1000;
     }
 
     .button-link {
@@ -46,15 +46,31 @@
       padding: 10px 16px;
       border-radius: 8px;
       font-size: 14px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
+    .language-switcher {
+      position: fixed;
+      top: 70px;
+      left: 10px;
+      z-index: 999;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .language-switcher select {
+      padding: 6px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
     header {
       text-align: center;
-      margin-top: 120px;
+      margin-top: 140px;
       margin-bottom: 2rem;
     }
 
@@ -68,37 +84,20 @@
       color: #f7c948;
     }
 
-    #language-switcher {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-
-    #language-switcher button {
-      background: #222;
-      color: #fff;
-      padding: 6px 12px;
-      border: none;
-      margin: 5px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
     section {
+      margin: 2rem auto;
       max-width: 850px;
-      margin: auto;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.4);
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 0 12px rgba(0,0,0,0.3);
-      margin-bottom: 2rem;
     }
 
     h2 {
       color: #f7c948;
+      margin-bottom: 0.7rem;
       border-bottom: 2px solid #f7c948;
-      padding-bottom: 6px;
-      margin-bottom: 1rem;
+      padding-bottom: 4px;
     }
 
     p, li {
@@ -106,14 +105,15 @@
       margin-bottom: 0.5rem;
     }
 
-    .lang { display: none; }
-    .lang.active { display: block; }
-
     footer {
       text-align: center;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #ccc;
-      margin-top: 2rem;
+    }
+
+    a {
+      color: #ffd700;
     }
 
     @media screen and (max-width: 600px) {
@@ -121,23 +121,42 @@
       .button-link { font-size: 12px; padding: 8px 12px; }
     }
   </style>
-
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-      document.querySelector('.lang.' + lang).classList.add('active');
-    }
-    window.onload = () => setLanguage('en');
-  </script>
 </head>
 <body>
 
-  <!-- En üstteki sabit kutular -->
+  <!-- 4 sarı kutucuk -->
   <div class="top-buttons">
-    <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link" target="_blank">🔥 Buy XSah</a>
-    <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link" target="_blank">👛 Phantom</a>
-    <a href="https://twitter.com/xsahcoin" class="button-link" target="_blank">🐦 Twitter</a>
-    <a href="https://github.com/mehmetgs45/xsah.coin" class="button-link" target="_blank">📁 GitHub</a>
+    <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
+      <i class="fas fa-fire"></i> Buy XSah
+    </a>
+    <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
+      <i class="fas fa-wallet"></i> Phantom
+    </a>
+    <a href="https://twitter.com/xsahcoin" target="_blank" class="button-link">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://github.com/mehmetgs45/xsah.coin" target="_blank" class="button-link">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+
+  <!-- Dil Seçici -->
+  <div class="language-switcher">
+    <select onchange="changeLanguage(this.value)">
+      <option value="en">🇬🇧 English</option>
+      <option value="tr">🇹🇷 Türkçe</option>
+      <option value="ku">🐏 Kurmancî</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="pl">🇵🇱 Polski</option>
+      <option value="ru">🇷🇺 Русский</option>
+      <option value="zh">🇨🇳 中文</option>
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="ar">🇸🇦 العربية</option>
+      <option value="hi">🇮🇳 हिन्दी</option>
+    </select>
   </div>
 
   <header>
@@ -145,21 +164,31 @@
     <p>Freedom • Resistance • Culture</p>
   </header>
 
-  <!-- Dil seçici -->
-  <div id="language-switcher">
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-    <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
-    <button onclick="setLanguage('ku')">🐏 Kurdî</button>
-  </div>
-
-  <!-- İçerikler -->
-  <section class="lang en active">
+  <section>
     <h2>About XSah Coin</h2>
-    <p>XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.</p>
+    <p><strong>English:</strong> XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.</p>
+    <p><strong>Kurdish (Kurmancî):</strong> XSah Coin ji ber xebata heştokekê li çiyayên Kurdistanê hatî afirandin. Wekî sembolê jiyanê, azadî û hevgirtinê bi xwezayê ye.</p>
+  </section>
+
+  <section>
     <h2>Join the Movement</h2>
-    <p>XSah is more than a token. It's a symbol of resistance and cultural pride.</p>
-    <h2>Tokenomics</h2>
-    <p>Total Supply: 1,000,000 XSAH<br>Decimals: 9</p>
+    <p>XSah is more than a token. It's a symbol of resistance and cultural pride. Follow us, support the mission, and spread the word.</p>
+    <p>📣 Share your support on <a href="https://twitter.com/xsahcoin" target="_blank">Twitter</a>!</p>
+  </section>
+
+  <section>
+    <h2>Technical Details</h2>
+    <ul>
+      <li><strong>Network:</strong> Solana</li>
+      <li><strong>Standard:</strong> SPL Token</li>
+      <li><strong>Symbol:</strong> XSAH</li>
+      <li><strong>Total Supply:</strong> 1,000,000</li>
+      <li><strong>Token Address:</strong> 3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump</li>
+      <li><strong>Wallets:</strong> Phantom, Solflare</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Roadmap</h2>
     <ul>
       <li>✅ June 2025: Token created & promoted</li>
@@ -170,43 +199,14 @@
     </ul>
   </section>
 
-  <section class="lang tr">
-    <h2>XSah Coin Hakkında</h2>
-    <p>XSah Coin, Kürt dağlarında bir koçun mücadelesinden ilham aldı. Yaşamı, özgürlüğü ve doğayla uyumu temsil eder.</p>
-    <h2>Harekete Katıl</h2>
-    <p>XSah sadece bir token değil, kültürel gurur ve direnişin sembolüdür.</p>
-    <h2>Token Ekonomisi</h2>
-    <p>Toplam Arz: 1.000.000 XSAH<br>Ondalık: 9</p>
-    <h2>Yol Haritası</h2>
-    <ul>
-      <li>✅ Haziran 2025: Token oluşturuldu ve tanıtıldı</li>
-      <li>✅ Temmuz 2025: Web sitesi yayında</li>
-      <li>🔜 Ağustos 2025: Mainnet lansmanı</li>
-      <li>🔜 Sonbahar 2025: DEX listeleri</li>
-      <li>🔜 2026: Kültürel iş birlikleri</li>
-    </ul>
-  </section>
-
-  <section class="lang ku">
-    <h2>Derbarê XSah Coinê</h2>
-    <p>XSah Coin ji ber têkoşîna heştokekê li Çiyayên Kurdistanê hate afirandin. Ew nîşana jiyanê, azadî û bi xwezayê re hevgirtinê ye.</p>
-    <h2>Tevlî Hereketê Bibe</h2>
-    <p>XSah ne tenê tokenek e. Ew sembola xebat û serbilindiyê ye.</p>
-    <h2>Tokenomî</h2>
-    <p>Hemû Hejmara: 1,000,000 XSAH<br>Decimal: 9</p>
-    <h2>Rêveberiya Proje</h2>
-    <ul>
-      <li>✅ Hezîran 2025: Token çêbû & reklam kir</li>
-      <li>✅ Tîrmeh 2025: Malpera resmi hate vekirin</li>
-      <li>🔜 Tebax 2025: Destpêka mainnet</li>
-      <li>🔜 Payîz 2025: Lîsteya DEX</li>
-      <li>🔜 2026: Hevbendiyên çandî</li>
-    </ul>
-  </section>
-
   <footer>
     <p>© 2025 XSah Community. All rights reserved.</p>
   </footer>
 
+  <script>
+    function changeLanguage(code) {
+      alert("Language switching coming soon: " + code);
+    }
+  </script>
 </body>
 </html>
