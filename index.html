@@ -21,8 +21,8 @@
     }
 
     body {
-      background: url('assets/mainnet/background.jpg') no-repeat center center fixed;
-      background-size: 80%;
+      background: url('assets/mainnet/background.jpg') no-repeat center top fixed;
+      background-size: 120%;
       background-color: #1a1a2e;
       color: #fff;
       padding: 1.5rem;
@@ -30,11 +30,11 @@
 
     .top-buttons {
       position: fixed;
-      top: 10px;
-      left: 10px;
+      top: 20px;
+      right: 20px;
       display: flex;
+      flex-direction: column;
       gap: 10px;
-      flex-wrap: wrap;
       z-index: 1000;
     }
 
@@ -52,25 +52,9 @@
       gap: 6px;
     }
 
-    .language-switcher {
-      position: fixed;
-      top: 70px;
-      left: 10px;
-      z-index: 999;
-      background: rgba(0,0,0,0.5);
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .language-switcher select {
-      padding: 6px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
     header {
       text-align: center;
-      margin-top: 140px;
+      margin-top: 100px;
       margin-bottom: 2rem;
     }
 
@@ -124,7 +108,6 @@
 </head>
 <body>
 
-  <!-- 4 sarı kutucuk -->
   <div class="top-buttons">
     <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
       <i class="fas fa-fire"></i> Buy XSah
@@ -138,25 +121,6 @@
     <a href="https://github.com/mehmetgs45/xsah.coin" target="_blank" class="button-link">
       <i class="fab fa-github"></i> GitHub
     </a>
-  </div>
-
-  <!-- Dil Seçici -->
-  <div class="language-switcher">
-    <select onchange="changeLanguage(this.value)">
-      <option value="en">🇬🇧 English</option>
-      <option value="tr">🇹🇷 Türkçe</option>
-      <option value="ku">🐏 Kurmancî</option>
-      <option value="es">🇪🇸 Español</option>
-      <option value="fr">🇫🇷 Français</option>
-      <option value="de">🇩🇪 Deutsch</option>
-      <option value="it">🇮🇹 Italiano</option>
-      <option value="pl">🇵🇱 Polski</option>
-      <option value="ru">🇷🇺 Русский</option>
-      <option value="zh">🇨🇳 中文</option>
-      <option value="ja">🇯🇵 日本語</option>
-      <option value="ar">🇸🇦 العربية</option>
-      <option value="hi">🇮🇳 हिन्दी</option>
-    </select>
   </div>
 
   <header>
@@ -203,10 +167,5 @@
     <p>© 2025 XSah Community. All rights reserved.</p>
   </footer>
 
-  <script>
-    function changeLanguage(code) {
-      alert("Language switching coming soon: " + code);
-    }
-  </script>
 </body>
 </html>
