@@ -146,6 +146,11 @@
 <section id="join">
   <h2>Join the Movement</h2>
   <p id="join-text"></p>
+  <p id="whitepaper-text">
+  <a href="https://github.com/mehmetgs45/xsah.coin/blob/main/whitepaper.html" target="_blank">
+    📄 Whitepaper
+  </a>
+</p>
 </section>
 
 <section id="tech">
@@ -179,6 +184,26 @@
   const texts = {
     en: {
       slogan: "Freedom • Resistance • Culture",
+      about: "XSah Coin is inspired by a ram’s struggle in the Kurdish mountains — a symbol of cultural pride, resistance, and freedom.",
+      join: "XSah is more than a token. It’s a movement. Join the mission and spread the word.",
+      whitepaper: "📄 Whitepaper"
+    },
+    tr: {
+      slogan: "Özgürlük • Direniş • Kültür",
+      about: "XSah Coin, Kürt dağlarında bir koçun verdiği mücadeleden ilham alır — kültürel gurur, direniş ve özgürlüğün sembolüdür.",
+      join: "XSah bir tokendan daha fazlasıdır. Bir harekettir. Bu misyona katıl ve sesi yay!",
+      whitepaper: "📄 Teknik Doküman"
+    },
+    ku: {
+      slogan: "Azadî • Berxwedan • Çand",
+      about: "XSah Coin ji têkoşîna gûyêkê di Çiyayên Kurdistanê de hevseng bûye — nîşaneke rûmeta çandî, berxwedan û azadîyê.",
+      join: "XSah tenê tokenek nîne. Rêkeftinek e. Bi me re be û dengê xwe belav bike!",
+      whitepaper: "📄 Rêbera Teknîk"
+    }
+  };
+</script>
+    en: {
+      slogan: "Freedom • Resistance • Culture",
       about: "XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.",
       join: "XSah is more than a token. It's a symbol of resistance and cultural pride. Follow us, support the mission, and spread the word."
     },
@@ -203,7 +228,7 @@
     const t = texts[code] || texts.other;
     document.getElementById("slogan").innerText = t.slogan;
     document.getElementById("about-text").innerText = t.about;
-    document.getElementById("join-text").innerText = t.join;
+   document.getElementById("whitepaper-text").querySelector("a").innerText = t.whitepaper;
   }
 
   // Default language
