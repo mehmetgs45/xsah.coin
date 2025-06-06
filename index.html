@@ -12,163 +12,203 @@
   <meta name="twitter:card" content="summary_large_image" />
   <script src="https://kit.fontawesome.com/3b599f6721.js" crossorigin="anonymous"></script>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
       background: url('assets/mainnet/background.jpg') no-repeat center center fixed;
-      background-size: 140%; /* Arka plan deseni büyütüldü */
+      background-size: 100%;
       background-color: #1a1a2e;
       color: #fff;
+      padding: 1.5rem;
     }
-
     .top-buttons {
       position: fixed;
       top: 10px;
       left: 10px;
-      z-index: 1000;
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
+      flex-wrap: wrap;
+      z-index: 1000;
     }
-
     .button-link {
       background-color: #ffd700;
       color: #000;
       font-weight: bold;
       text-decoration: none;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: 8px;
       font-size: 14px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
       display: flex;
       align-items: center;
       gap: 6px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     }
-
-    .lang-selector {
-      margin-top: 70px;
-      text-align: center;
+    .language-switcher {
+      position: fixed;
+      top: 70px;
+      left: 10px;
+      z-index: 999;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 8px;
     }
-
-    .lang-selector button {
-      background: none;
-      border: none;
-      color: #fff;
-      margin: 5px;
-      cursor: pointer;
-      font-size: 1.1rem;
+    .language-switcher select {
+      padding: 6px;
+      border-radius: 5px;
+      font-weight: bold;
     }
-
     header {
       text-align: center;
-      margin: 30px auto;
+      margin-top: 140px;
+      margin-bottom: 2rem;
     }
-
     header h1 {
       font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: bold;
       color: #f7c948;
     }
-
     section {
-      max-width: 800px;
-      margin: 1.5rem auto;
-      background-color: rgba(0, 0, 0, 0.5);
+      margin: 2rem auto;
+      max-width: 850px;
+      background-color: rgba(0, 0, 0, 0.4);
       padding: 1.5rem;
       border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
     }
-
     h2 {
       color: #f7c948;
       margin-bottom: 0.7rem;
       border-bottom: 2px solid #f7c948;
       padding-bottom: 4px;
     }
-
     p, li {
       font-size: 1rem;
       margin-bottom: 0.5rem;
     }
-
     footer {
       text-align: center;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #ccc;
-      margin: 2rem 0;
+    }
+    a {
+      color: #ffd700;
+    }
+    @media screen and (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .button-link { font-size: 12px; padding: 8px 12px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Buttons -->
-  <div class="top-buttons">
-    <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link"><i class="fas fa-fire"></i> Buy XSah</a>
-    <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link"><i class="fas fa-wallet"></i> Phantom</a>
-    <a href="https://twitter.com/xsahcoin" class="button-link"><i class="fab fa-twitter"></i> Twitter</a>
-    <a href="https://github.com/mehmetgs45/xsah.coin" class="button-link"><i class="fab fa-github"></i> GitHub</a>
-  </div>
+<div class="top-buttons">
+  <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
+    <i class="fas fa-fire"></i> Buy XSah
+  </a>
+  <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
+    <i class="fas fa-wallet"></i> Phantom
+  </a>
+  <a href="https://twitter.com/xsahcoin" target="_blank" class="button-link">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+  <a href="https://github.com/mehmetgs45/xsah.coin" target="_blank" class="button-link">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>
 
-  <!-- Language Selector -->
-  <div class="lang-selector">
-    <button>🇬🇧 English</button>
-    <button>🇹🇷 Türkçe</button>
-    <button>🐏 Kurmancî</button>
-    <button>🇪🇸 Español</button>
-    <button>🇫🇷 Français</button>
-    <button>🇩🇪 Deutsch</button>
-    <button>🇮🇹 Italiano</button>
-    <button>🇵🇱 Polski</button>
-    <button>🇷🇺 Русский</button>
-    <button>🇨🇳 中文</button>
-    <button>🇯🇵 日本語</button>
-    <button>🇸🇦 العربية</button>
-    <button>🇮🇳 हिन्दी</button>
-  </div>
+<div class="language-switcher">
+  <select onchange="changeLanguage(this.value)">
+    <option value="en">🇬🇧 English</option>
+    <option value="tr">🇹🇷 Türkçe</option>
+    <option value="ku">🐏 Kurmancî</option>
+    <option value="other">🌍 Other</option>
+  </select>
+</div>
 
-  <!-- Main Content -->
-  <header>
-    <h1>🐏 XSah Coin</h1>
-    <p>Freedom • Resistance • Culture</p>
-  </header>
+<header>
+  <h1>🐏 XSah Coin</h1>
+  <p id="slogan">Freedom • Resistance • Culture</p>
+</header>
 
-  <section>
-    <h2>About XSah Coin</h2>
-    <p><strong>English:</strong> XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.</p>
-    <p><strong>Kurdish (Kurmancî):</strong> XSah Coin ji ber xebata heştokekê li çiyayên Kurdistanê hatî afirandin. Wekî sembolê jiyanê, azadî û hevgirtinê bi xwezayê ye.</p>
-  </section>
+<section id="about">
+  <h2>About XSah Coin</h2>
+  <p id="about-text"></p>
+</section>
 
-  <section>
-    <h2>Join the Movement</h2>
-    <p>XSah is more than a token. It's a symbol of resistance and cultural pride. Follow us, support the mission, and spread the word.</p>
-    <p>📣 Share your support on <a href="https://twitter.com/xsahcoin" target="_blank">Twitter</a>!</p>
-  </section>
+<section id="join">
+  <h2>Join the Movement</h2>
+  <p id="join-text"></p>
+</section>
 
-  <section>
-    <h2>Technical Details</h2>
-    <ul>
-      <li><strong>Network:</strong> Solana</li>
-      <li><strong>Standard:</strong> SPL Token</li>
-      <li><strong>Symbol:</strong> XSAH</li>
-      <li><strong>Total Supply:</strong> 1,000,000</li>
-      <li><strong>Token Address:</strong> 3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump</li>
-      <li><strong>Wallets:</strong> Phantom, Solflare</li>
-    </ul>
-  </section>
+<section id="tech">
+  <h2>Technical Details</h2>
+  <ul>
+    <li><strong>Network:</strong> Solana</li>
+    <li><strong>Standard:</strong> SPL Token</li>
+    <li><strong>Symbol:</strong> XSAH</li>
+    <li><strong>Total Supply:</strong> 1,000,000</li>
+    <li><strong>Token Address:</strong> 3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump</li>
+    <li><strong>Wallets:</strong> Phantom, Solflare</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Roadmap</h2>
-    <ul>
-      <li>✅ June 2025: Token created & promoted</li>
-      <li>✅ July 2025: Website live, community building</li>
-      <li>🔜 August 2025: Mainnet launch</li>
-      <li>🔜 Fall 2025: DEX Listings</li>
-      <li>🔜 2026: Cultural Collaborations</li>
-    </ul>
-  </section>
+<section id="roadmap">
+  <h2>Roadmap</h2>
+  <ul>
+    <li>✅ June 2025: Token created & promoted</li>
+    <li>✅ July 2025: Website live, community building</li>
+    <li>🔜 August 2025: Mainnet launch</li>
+    <li>🔜 Fall 2025: DEX Listings</li>
+    <li>🔜 2026: Cultural Collaborations</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>© 2025 XSah Community. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>© 2025 XSah Community. All rights reserved.</p>
+</footer>
+
+<script>
+  const texts = {
+    en: {
+      slogan: "Freedom • Resistance • Culture",
+      about: "XSah Coin is inspired by a ram’s struggle in the Kurdish mountains. It represents survival, freedom, and harmony with nature.",
+      join: "XSah is more than a token. It's a symbol of resistance and cultural pride. Follow us, support the mission, and spread the word."
+    },
+    tr: {
+      slogan: "Özgürlük • Direniş • Kültür",
+      about: "XSah Coin, Kürt dağlarında bir koçun mücadelesinden ilham alır. Hayatta kalmayı, özgürlüğü ve doğayla uyumu simgeler.",
+      join: "XSah bir tokendan daha fazlasıdır. Direnişin ve kültürel gururun sembolüdür. Bizi takip edin, misyonu destekleyin ve yayılmasına yardımcı olun."
+    },
+    ku: {
+      slogan: "Azadî • Berxwedan • Çand",
+      about: "XSah Coin ji xebata keçiyekê li çiyayên Kurdistanê ve hatî ilhamgirtin. Ew nimêneya jiyanê, azadî û hevgirtinê bi xwezayê ye.",
+      join: "XSah tenê tokenek nîne. Ew sembolê berxwedanê û serbilindiyê ya çandî ye. Em bi hev re biparêzin û peyama me belav bikin."
+    },
+    other: {
+      slogan: "Coming Soon",
+      about: "Translation coming soon in your language.",
+      join: "Follow us and support the mission. More languages will be added!"
+    }
+  };
+
+  function changeLanguage(code) {
+    const t = texts[code] || texts.other;
+    document.getElementById("slogan").innerText = t.slogan;
+    document.getElementById("about-text").innerText = t.about;
+    document.getElementById("join-text").innerText = t.join;
+  }
+
+  // Default language
+  changeLanguage("en");
+</script>
 
 </body>
 </html>
