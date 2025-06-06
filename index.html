@@ -11,31 +11,25 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <script src="https://kit.fontawesome.com/3b599f6721.js" crossorigin="anonymous"></script>
-
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background: url('assets/mainnet/background.jpg') no-repeat center top fixed;
-      background-size: 120%;
+      background: url('assets/mainnet/background.jpg') no-repeat center center fixed;
+      background-size: 140%; /* Arka plan deseni büyütüldü */
       background-color: #1a1a2e;
       color: #fff;
-      padding: 1.5rem;
     }
 
     .top-buttons {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      top: 10px;
+      left: 10px;
       z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .button-link {
@@ -43,38 +37,45 @@
       color: #000;
       font-weight: bold;
       text-decoration: none;
-      padding: 10px 16px;
+      padding: 10px 14px;
       border-radius: 8px;
       font-size: 14px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.3);
       display: flex;
       align-items: center;
       gap: 6px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .lang-selector {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .lang-selector button {
+      background: none;
+      border: none;
+      color: #fff;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
     }
 
     header {
       text-align: center;
-      margin-top: 100px;
-      margin-bottom: 2rem;
+      margin: 30px auto;
     }
 
     header h1 {
       font-size: 3rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: bold;
       color: #f7c948;
     }
 
     section {
-      margin: 2rem auto;
-      max-width: 850px;
-      background-color: rgba(0, 0, 0, 0.4);
+      max-width: 800px;
+      margin: 1.5rem auto;
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.3);
     }
 
     h2 {
@@ -91,38 +92,40 @@
 
     footer {
       text-align: center;
-      margin-top: 3rem;
       font-size: 0.9rem;
       color: #ccc;
-    }
-
-    a {
-      color: #ffd700;
-    }
-
-    @media screen and (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      .button-link { font-size: 12px; padding: 8px 12px; }
+      margin: 2rem 0;
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Buttons -->
   <div class="top-buttons">
-    <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
-      <i class="fas fa-fire"></i> Buy XSah
-    </a>
-    <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" target="_blank" class="button-link">
-      <i class="fas fa-wallet"></i> Phantom
-    </a>
-    <a href="https://twitter.com/xsahcoin" target="_blank" class="button-link">
-      <i class="fab fa-twitter"></i> Twitter
-    </a>
-    <a href="https://github.com/mehmetgs45/xsah.coin" target="_blank" class="button-link">
-      <i class="fab fa-github"></i> GitHub
-    </a>
+    <a href="https://pump.fun/coin/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link"><i class="fas fa-fire"></i> Buy XSah</a>
+    <a href="https://solscan.io/token/3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump" class="button-link"><i class="fas fa-wallet"></i> Phantom</a>
+    <a href="https://twitter.com/xsahcoin" class="button-link"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="https://github.com/mehmetgs45/xsah.coin" class="button-link"><i class="fab fa-github"></i> GitHub</a>
   </div>
 
+  <!-- Language Selector -->
+  <div class="lang-selector">
+    <button>🇬🇧 English</button>
+    <button>🇹🇷 Türkçe</button>
+    <button>🐏 Kurmancî</button>
+    <button>🇪🇸 Español</button>
+    <button>🇫🇷 Français</button>
+    <button>🇩🇪 Deutsch</button>
+    <button>🇮🇹 Italiano</button>
+    <button>🇵🇱 Polski</button>
+    <button>🇷🇺 Русский</button>
+    <button>🇨🇳 中文</button>
+    <button>🇯🇵 日本語</button>
+    <button>🇸🇦 العربية</button>
+    <button>🇮🇳 हिन्दी</button>
+  </div>
+
+  <!-- Main Content -->
   <header>
     <h1>🐏 XSah Coin</h1>
     <p>Freedom • Resistance • Culture</p>
