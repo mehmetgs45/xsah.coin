@@ -2,96 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XSah Coin Whitepaper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🐏 XSah Coin Whitepaper</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" type="image/png" />
+  <meta name="description" content="XSah Coin whitepaper in English, Turkish and Kurmancî. A cultural and decentralized movement from the mountains." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-    }
-    h1, h2 {
-      color: #004d73;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
+    body { background-color: #1a1a2e; color: #fff; font-family: Arial, sans-serif; padding: 20px; }
+    header, section, footer { max-width: 850px; margin: 0 auto 2rem auto; }
+    h1, h2 { color: gold; }
+    .language-switcher { margin: 1rem 0; }
+    .whitepaper-content { display: none; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; }
+    .visible { display: block; }
+    select { padding: 8px; font-weight: bold; border-radius: 6px; }
+    ul { margin-left: 20px; }
   </style>
 </head>
 <body>
 
-  <h1>XSah Coin Whitepaper</h1>
+<header>
+  <h1>📄 XSah Coin Whitepaper</h1>
+  <p style="color:#f7c948">Freedom • Resistance • Culture</p>
+</header>
 
-  <div class="section">
-    <h2>XSah Nedir?</h2>
-    <p>
-      XSah Coin, Kürt dağlarında doğan bir direniş simgesidir. 
-      Bir koçun zorlu doğaya karşı verdiği özgürlük mücadelesi, 
-      bir halkın ruhunu ve kültürel direncini yansıtır. 
-      XSah sadece bir token değil, aynı zamanda kültür, direniş ve özgürlük hareketidir.
-    </p>
+<section>
+  <div class="language-switcher">
+    <label for="lang">🌐 Select Language: </label>
+    <select id="lang" onchange="changeLang(this.value)">
+      <option value="en">🇬🇧 English</option>
+      <option value="tr">🇹🇷 Türkçe</option>
+      <option value="ku">🐏 Kurmancî</option>
+    </select>
   </div>
 
-  <div class="section">
-    <h2>Teknik Detaylar</h2>
+  <div id="wp-en" class="whitepaper-content visible">
+    <h2>XSah Coin Whitepaper (English)</h2>
+    <p>XSah Coin is a decentralized SPL token built on the Solana blockchain. Inspired by the unbreakable spirit of a ram in the Kurdish mountains, it represents cultural pride, resistance, and digital freedom.</p>
     <ul>
       <li><strong>Blockchain:</strong> Solana</li>
-      <li><strong>Token Standardı:</strong> SPL Token</li>
-      <li><strong>Token İsmi:</strong> XSah Coin</li>
-      <li><strong>Sembol:</strong> XSAH</li>
-      <li><strong>Toplam Arz:</strong> 1,000,000 XSAH</li>
-      <li><strong>Ondalık:</strong> 9</li>
-      <li><strong>Desteklenen Cüzdanlar:</strong> Phantom, Solflare, Backpack</li>
-      <li><strong>Token Adresi:</strong> 3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump</li>
+      <li><strong>Standard:</strong> SPL Token</li>
+      <li><strong>Symbol:</strong> XSAH</li>
+      <li><strong>Total Supply:</strong> 1,000,000</li>
+      <li><strong>Utility:</strong> Community rewards, cultural collaborations, and DAO governance.</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Roadmap</h2>
-    <ol>
-      <li>✅ XSah Token Devnet'te oluşturuldu</li>
-      <li>✅ Phantom cüzdan entegrasyonu yapıldı</li>
-      <li>✅ xsah.org web sitesi yayına alındı</li>
-      <li>✅ GitHub üzerinden açık kaynak paylaşıldı</li>
-      <li>🔄 Phantom doğrulama başvurusu hazırlanıyor</li>
-      <li>🔜 Mainnet lansmanı ve DEX listeleme</li>
-      <li>🔜 NFT koleksiyonu ve DAO sistemi</li>
-    </ol>
-  </div>
-
-  <div class="section">
-    <h2>Topluluk Yapısı</h2>
-    <p>
-      XSah Coin, merkeziyetsiz bir topluluk tarafından desteklenir. 
-      Katılımcılar fikir paylaşır, geliştirme yapar ve kültürel üretimlere katkı sağlar. 
-      Telegram ve X (Twitter) topluluğu üzerinden herkes bu harekete dahil olabilir.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Tokenomics</h2>
+  <div id="wp-tr" class="whitepaper-content">
+    <h2>XSah Coin Teknik Doküman (Türkçe)</h2>
+    <p>XSah Coin, Solana blokzinciri üzerine inşa edilmiş merkeziyetsiz bir SPL tokendir. Kürt dağlarında özgürlük için mücadele eden bir koçtan ilham alır. Kültürel gururu, direnişi ve dijital özgürlüğü temsil eder.</p>
     <ul>
-      <li>%60 Topluluk ve Airdrop</li>
-      <li>%20 Likidite Havuzu</li>
-      <li>%10 Geliştirici Rezerve</li>
-      <li>%10 DAO Hazinesi</li>
+      <li><strong>Blockchain:</strong> Solana</li>
+      <li><strong>Standart:</strong> SPL Token</li>
+      <li><strong>Sembol:</strong> XSAH</li>
+      <li><strong>Toplam Arz:</strong> 1.000.000</li>
+      <li><strong>Kullanım Alanı:</strong> Topluluk ödülleri, kültürel iş birlikleri ve DAO yönetişimi.</li>
     </ul>
-    <p>
-      XSah, adil ve sürdürülebilir bir dağıtım modeli hedefler.
-    </p>
   </div>
 
-  <div class="section">
-    <h2>Vizyon ve Misyon</h2>
-    <p><strong>Vizyon:</strong> XSah, kültürel kimliğin dijital dünyada özgürce temsil edilmesini amaçlar.</p>
-    <p><strong>Misyon:</strong> Merkeziyetsiz bir toplulukla direnişi, sanatı ve teknolojiyi bir araya getirmek.</p>
+  <div id="wp-ku" class="whitepaper-content">
+    <h2>Belgeya XSah Coin (Kurmancî)</h2>
+    <p>XSah Coin tokenekî azad e li ser blockchainê Solana hate çêkirin. Ew ji berxwedana keçiyekê li çiyayên Kurdistanê hate ilhamgirtin. Ew nîşanê rûmeta çandî, berxwedan û azadîya dijîtal e.</p>
+    <ul>
+      <li><strong>Blockchain:</strong> Solana</li>
+      <li><strong>Standard:</strong> SPL Token</li>
+      <li><strong>Sembol:</strong> XSAH</li>
+      <li><strong>Tevahî Pêşkêş:</strong> 1,000,000</li>
+      <li><strong>Karanîna Wê:</strong> Xelata civakî, hevkariya çandî û rêveberiya DAO'ê.</li>
+    </ul>
   </div>
+</section>
+
+<footer>
+  <p style="text-align:center; color:#ccc;">© 2025 XSah Community</p>
+</footer>
+
+<script>
+  function changeLang(lang) {
+    document.querySelectorAll('.whitepaper-content').forEach(el => el.classList.remove('visible'));
+    document.getElementById('wp-' + lang).classList.add('visible');
+  }
+</script>
 
 </body>
 </html>
