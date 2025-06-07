@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🐏 XSah Coin Whitepaper</title>
-  <link rel="icon" href="https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png" type="image/png" />
-  <meta name="description" content="XSah Coin whitepaper in English, Turkish and Kurmancî. A cultural and decentralized movement from the mountains." />
   <style>
     body { background-color: #1a1a2e; color: #fff; font-family: Arial, sans-serif; padding: 20px; }
     header, section, footer { max-width: 850px; margin: 0 auto 2rem auto; }
@@ -20,55 +18,44 @@
 <body>
 
 <header>
-  <h1>📄 XSah Coin Whitepaper</h1>
-  <p style="color:#f7c948">Freedom • Resistance • Culture</p>
+  <h1>🐏 XSah Coin</h1>
+  <p id="slogan">Freedom • Resistance • Culture</p>
 </header>
 
+<section class="language-switcher">
+  <label for="lang">🌐 Select Language: </label>
+  <select id="lang" onchange="changeLang(this.value)">
+    <option value="en">🇬🇧 English</option>
+    <option value="tr">🇹🇷 Türkçe</option>
+    <option value="ku">🐏 Kurmancî</option>
+  </select>
+</section>
+
 <section>
-  <div class="language-switcher">
-    <label for="lang">🌐 Select Language: </label>
-    <select id="lang" onchange="changeLang(this.value)">
-      <option value="en">🇬🇧 English</option>
-      <option value="tr">🇹🇷 Türkçe</option>
-      <option value="ku">🐏 Kurmancî</option>
-    </select>
-  </div>
+  <h2 id="about-title">About XSah Coin</h2>
+  <p id="about-text"></p>
+</section>
 
-  <div id="wp-en" class="whitepaper-content visible">
-    <h2>XSah Coin Whitepaper (English)</h2>
-    <p>XSah Coin is a decentralized SPL token built on the Solana blockchain. Inspired by the unbreakable spirit of a ram in the Kurdish mountains, it represents cultural pride, resistance, and digital freedom.</p>
-    <ul>
-      <li><strong>Blockchain:</strong> Solana</li>
-      <li><strong>Standard:</strong> SPL Token</li>
-      <li><strong>Symbol:</strong> XSAH</li>
-      <li><strong>Total Supply:</strong> 1,000,000</li>
-      <li><strong>Utility:</strong> Community rewards, cultural collaborations, and DAO governance.</li>
-    </ul>
-  </div>
+<section>
+  <h2 id="tech-title">Technical Details</h2>
+  <ul>
+    <li><strong id="net-label">Network:</strong> Solana</li>
+    <li><strong id="std-label">Standard:</strong> SPL Token</li>
+    <li><strong id="sym-label">Symbol:</strong> XSAH</li>
+    <li><strong id="supply-label">Total Supply:</strong> 1,000,000</li>
+    <li><strong id="addr-label">Token Address:</strong> 3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump</li>
+    <li><strong id="wallets-label">Wallets:</strong> Phantom, Solflare</li>
+  </ul>
+</section>
 
-  <div id="wp-tr" class="whitepaper-content">
-    <h2>XSah Coin Teknik Doküman (Türkçe)</h2>
-    <p>XSah Coin, Solana blokzinciri üzerine inşa edilmiş merkeziyetsiz bir SPL tokendir. Kürt dağlarında özgürlük için mücadele eden bir koçtan ilham alır. Kültürel gururu, direnişi ve dijital özgürlüğü temsil eder.</p>
-    <ul>
-      <li><strong>Blockchain:</strong> Solana</li>
-      <li><strong>Standart:</strong> SPL Token</li>
-      <li><strong>Sembol:</strong> XSAH</li>
-      <li><strong>Toplam Arz:</strong> 1.000.000</li>
-      <li><strong>Kullanım Alanı:</strong> Topluluk ödülleri, kültürel iş birlikleri ve DAO yönetişimi.</li>
-    </ul>
-  </div>
+<section>
+  <h2 id="roadmap-title">Roadmap</h2>
+  <ul id="roadmap-list"></ul>
+</section>
 
-  <div id="wp-ku" class="whitepaper-content">
-    <h2>Belgeya XSah Coin (Kurmancî)</h2>
-    <p>XSah Coin tokenekî azad e li ser blockchainê Solana hate çêkirin. Ew ji berxwedana keçiyekê li çiyayên Kurdistanê hate ilhamgirtin. Ew nîşanê rûmeta çandî, berxwedan û azadîya dijîtal e.</p>
-    <ul>
-      <li><strong>Blockchain:</strong> Solana</li>
-      <li><strong>Standard:</strong> SPL Token</li>
-      <li><strong>Sembol:</strong> XSAH</li>
-      <li><strong>Tevahî Pêşkêş:</strong> 1,000,000</li>
-      <li><strong>Karanîna Wê:</strong> Xelata civakî, hevkariya çandî û rêveberiya DAO'ê.</li>
-    </ul>
-  </div>
+<section>
+  <h2 id="wp-title">Whitepaper</h2>
+  <div id="whitepaper-text" class="whitepaper-content visible"></div>
 </section>
 
 <footer>
@@ -76,10 +63,103 @@
 </footer>
 
 <script>
-  function changeLang(lang) {
-    document.querySelectorAll('.whitepaper-content').forEach(el => el.classList.remove('visible'));
-    document.getElementById('wp-' + lang).classList.add('visible');
+const data = {
+  en: {
+    slogan: "Freedom • Resistance • Culture",
+    about_title: "About XSah Coin",
+    about: "XSah Coin is inspired by the struggle of a ram in the Kurdish mountains. A cultural symbol turned into a decentralized token on Solana.",
+    tech_title: "Technical Details",
+    network: "Network:",
+    standard: "Standard:",
+    symbol: "Symbol:",
+    supply: "Total Supply:",
+    address: "Token Address:",
+    wallets: "Wallets:",
+    roadmap_title: "Roadmap",
+    roadmap: [
+      "✅ June 2025: Token created & promoted",
+      "✅ July 2025: Website live, community building",
+      "🔜 August 2025: Mainnet launch",
+      "🔜 Fall 2025: DEX Listings",
+      "🔜 2026: Cultural Collaborations"
+    ],
+    wp_title: "Whitepaper",
+    whitepaper: "XSah Coin is a decentralized SPL token built on Solana. It honors resistance, culture, and the wild spirit of the mountains."
+  },
+  tr: {
+    slogan: "Özgürlük • Direniş • Kültür",
+    about_title: "XSah Coin Hakkında",
+    about: "XSah Coin, Kürt dağlarındaki bir koçun mücadelesinden ilham alır. Kültürel bir sembol, Solana üzerinde merkeziyetsiz bir tokene dönüşür.",
+    tech_title: "Teknik Detaylar",
+    network: "Ağ:",
+    standard: "Standart:",
+    symbol: "Sembol:",
+    supply: "Toplam Arz:",
+    address: "Token Adresi:",
+    wallets: "Cüzdanlar:",
+    roadmap_title: "Yol Haritası",
+    roadmap: [
+      "✅ Haziran 2025: Token oluşturuldu ve tanıtıldı",
+      "✅ Temmuz 2025: Web sitesi yayında, topluluk inşası",
+      "🔜 Ağustos 2025: Mainnet lansmanı",
+      "🔜 Sonbahar 2025: DEX listelenmeleri",
+      "🔜 2026: Kültürel iş birlikleri"
+    ],
+    wp_title: "Teknik Doküman",
+    whitepaper: "XSah Coin, Solana üzerinde oluşturulmuş merkeziyetsiz bir SPL tokendir. Direnişi, kültürü ve dağların özgür ruhunu onurlandırır."
+  },
+  ku: {
+    slogan: "Azadî • Berxwedan • Çand",
+    about_title: "Derbarê XSah Coin",
+    about: "XSah Coin ji têkoşîna keçiyekê li Çiyayên Kurdistanê hatî afirandin. Nîşaneke çandî ya ku li ser Solana hate girtin.",
+    tech_title: "Hûrguliyên Teknîkî",
+    network: "Tor:",
+    standard: "Standard:",
+    symbol: "Sembol:",
+    supply: "Pêşkêşa Giştî:",
+    address: "Navnîşana Tokenê:",
+    wallets: "Cüzdan:",
+    roadmap_title: "Xerîta Rê",
+    roadmap: [
+      "✅ Hezîran 2025: Token hate çêkirin û belavkirin",
+      "✅ Tîrmeh 2025: Malpera weşandin, civaka çêkirin",
+      "🔜 Tebax 2025: Destpêka mainnetê",
+      "🔜 Payîz 2025: DEXê tên lîste kirin",
+      "🔜 2026: Hevkarîyên çandî"
+    ],
+    wp_title: "Belgeya XSah",
+    whitepaper: "XSah Coin tokenekî azad e li ser Solana. Rûmeta berxwedanê, çand û xweşbûna jiyanê di nav çiyayan de tê nîşandan."
   }
+};
+
+function changeLang(lang) {
+  const t = data[lang];
+  document.getElementById("slogan").innerText = t.slogan;
+  document.getElementById("about-title").innerText = t.about_title;
+  document.getElementById("about-text").innerText = t.about;
+  document.getElementById("tech-title").innerText = t.tech_title;
+  document.getElementById("net-label").innerText = t.network;
+  document.getElementById("std-label").innerText = t.standard;
+  document.getElementById("sym-label").innerText = t.symbol;
+  document.getElementById("supply-label").innerText = t.supply;
+  document.getElementById("addr-label").innerText = t.address;
+  document.getElementById("wallets-label").innerText = t.wallets;
+  document.getElementById("roadmap-title").innerText = t.roadmap_title;
+  document.getElementById("wp-title").innerText = t.wp_title;
+  document.getElementById("whitepaper-text").innerText = t.whitepaper;
+
+  const roadmapEl = document.getElementById("roadmap-list");
+  roadmapEl.innerHTML = "";
+  t.roadmap.forEach(item => {
+    const li = document.createElement("li");
+    li.innerText = item;
+    roadmapEl.appendChild(li);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  changeLang("en");
+});
 </script>
 
 </body>
