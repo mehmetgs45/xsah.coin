@@ -95,3 +95,19 @@
 <h2>🧭 Status</h2>
 <p><strong>Project Phase:</strong> Active Development (Devnet & Website Live)</p>
 <p>Built with ❤️ by the XSah Community.</p>
+
+<hr />
+
+<h2>📚 XSah Coin Documentation & Resources</h2>
+
+<ul>
+  <li>📝 <a href="./whitepaper.html">Whitepaper</a></li>
+  <li>🛡️ <a href="./SECURITY.md">Security Policy</a></li>
+  <li>🤝 <a href="./CONTRIBUTING.md">Contributing Guidelines</a></li>
+  <li>💬 <a href="./CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+  <li>🗺️ <a href="./ROADMAP.md">Project Roadmap</a></li>
+  <li>🐛 <a href="./.github/ISSUE_TEMPLATE/bug_report.md">Bug Report Template</a></li>
+  <li>🚀 <a href="./.github/ISSUE_TEMPLATE/feature_request.md">Feature Request Template</a></li>
+  <li>👥 <a href="./.github/CODEOWNERS">Maintainers & CODEOWNERS</a></li>
+  <li>⚙️ <a href="./.gitignore">.gitignore File</a></li>
+</ul>
