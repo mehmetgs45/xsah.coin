@@ -1,0 +1,16 @@
+{
+  "name": "XSah Coin",
+  "symbol": "XSAH",
+  "decimals": 6,
+  "address": "3F8zQuatSZq69V6h17oSQUGhMMkR6G7ceDeyjkSipump",
+  "logoURI": "https://raw.githubusercontent.com/mehmetgs45/xsah-coin-fork/main/logo.png",
+  "tags": ["meme", "culture", "freedom"],
+  "extensions": {
+    "website": "https://xsah.org",
+    "whitepaper": "https://xsah.org/whitepaper.html",
+    "description": "XSah Coin is a decentralized Solana token born in the Kurdish mountains. A symbol of resistance, culture, and freedom — strong like a ram, free like a people.",
+    "twitter": "https://twitter.com/xsahcoin",
+    "telegram": "https://t.me/xsahcoin",
+    "github": "https://github.com/mehmetgs45/xsah-coin-fork"
+  }
+}
